@@ -8,7 +8,7 @@ This cache simulator can mimic behavior of different combination of cache possib
 into one cache), Split Cache(separate instruction cache and data cache) and NONE (no cache at all). You can also specify number of cache levels up to two. For this simulator, we use write back strategy, which basically means dirty bit is involved when decide whether or not to evict an entry. If we have a cache write hit
 We are going to set dirty bit to 1 and when that entry is later evicted, it needs to be written into the next level cache, if any.
 
-*** NOTE: There is a policy called whether allocate memory on write miss. This means if we have write miss on level 1 cache, we have two options. One is to write this data into
+***NOTE: There is a policy called whether allocate memory on write miss. This means if we have write miss on level 1 cache, we have two options. One is to write this data into
 next level directly(not allocate memory on write miss), or we can bring up the missing block from the lower level, and then modify the data in it, setting the dirty bit
 to 1 eventually.***
 
