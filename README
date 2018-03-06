@@ -1,0 +1,9 @@
+
+
+
+TO RUN DineroIV, enter ./dineroIV/d4-7 and then enter the following command:
+
+./dineroIV -l1-isize 16384 -l1-iassoc 1 -l1-ibsize 32  -l1-dsize 16384 -l1-dbsize 32 -l1-dassoc 1  -l2-usize 262144 -l2-ubsize 64 -l2-uassoc 4 -informat d < ../../DineroFull.din
+
+
+Hit Enter and wait for a few seconds, you will see the simulation result given by DineroIV, which should be the correct result of the second trace file (750 million)
